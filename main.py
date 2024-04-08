@@ -41,13 +41,16 @@ countries = [
 
 
 parser = argparse.ArgumentParser(description="Scrape Uber Eats data")
+
 parser.add_argument(
+    "--country",
     "-c",
     type=str,
     nargs="+",
     help="Scrape data from a specific country. \nIf not specified, all countries will be scraped.",
     metavar="<COUNTRYCODE>",
 )
+
 args = parser.parse_args()
 
 
